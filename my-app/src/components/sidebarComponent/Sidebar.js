@@ -5,9 +5,7 @@ function Sidebar() {
   return (
     <S.MainSidebar>
       <S.SidebarPersonal>
-        <S.SidebarPersonalName className="sidebar__personal-name">
-          Sergey.Ivanov
-        </S.SidebarPersonalName>
+        <S.SidebarPersonalName>Sergey.Ivanov</S.SidebarPersonalName>
         <S.SidebarIcon>
           <svg alt="logout">
             <use xlinkHref="img/icon/sprite.svg#logout"></use>
