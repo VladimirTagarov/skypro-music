@@ -1,4 +1,3 @@
-import "./bar.css";
 import * as S from "./Bar.style.js";
 
 function Bar() {

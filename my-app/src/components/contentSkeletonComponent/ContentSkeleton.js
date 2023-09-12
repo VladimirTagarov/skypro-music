@@ -1,4 +1,3 @@
-import "./content.css";
 import * as S from "./ContentSkeleton.style";
 
 function ContentSkeleton() {

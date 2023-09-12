@@ -1,4 +1,3 @@
-import "./content.css";
 import * as S from "./Content.style";
 
 function Content() {
