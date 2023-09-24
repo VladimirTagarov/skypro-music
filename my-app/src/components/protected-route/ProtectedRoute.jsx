@@ -6,7 +6,7 @@ export const ProtectedRoute = ({
   redirectPath = "/login",
   isAllowed,
 }) => {
-  if (!isAllowed) {
+  if (!localStorage.getItem("user")) {
     return <Navigate to={redirectPath} replace={true} />;
   }
 

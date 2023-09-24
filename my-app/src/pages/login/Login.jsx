@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 export const Login = () => {
   const navigate = useNavigate();
   const setUser = () => {
+    localStorage.setItem("user", "token");
     navigate("/", { replace: true });
   };
   return (

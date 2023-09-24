@@ -11,6 +11,7 @@ import SidebarSkeleton from "./components/sidebarSkeletonComponent/sidebarSkelet
 import Bar from "./components/barComponent/Bar.js";
 import BarSkeleton from "./components/barSkeletonComponent/BarSkeleton.js";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import * as S from "./App.style";
 import { createGlobalStyle } from "styled-components";
@@ -59,6 +60,8 @@ import { createGlobalStyle } from "styled-components";
 
 function App() {
   const [user, setUser] = useState(null);
+
+  const navigate = useNavigate();
 
   const handleLogin = () => setUser({ login: "taradam" });
 
