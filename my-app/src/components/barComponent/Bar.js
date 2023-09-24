@@ -1,3 +1,4 @@
+import React from "react";
 import * as S from "./Bar.style.js";
 
 function Bar() {

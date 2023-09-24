@@ -1,3 +1,4 @@
+import React from "react";
 import AuthorFilter from "../FilterAuthorComponent/AuthorFilter";
 import GenreFilter from "../FilterGenreComponent/GenreFilter";
 import YearFilter from "../FilterYearComponent/yearFilter";

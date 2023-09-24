@@ -1,4 +1,8 @@
+import React from "react";
 import * as S from "./Sidebar.style";
+import { Link } from "react-router-dom";
+
+export const category = [1, 2, 3];
 
 function Sidebar() {
   return (
@@ -13,21 +17,39 @@ function Sidebar() {
       </S.SidebarPersonal>
       <S.SidebarBlock>
         <S.SidebarList>
-          <S.SidebarItem>
-            <S.SidebarLink href="#">
-              <S.SidebarImg src="img/playlist01.png" alt="day's playlist" />
-            </S.SidebarLink>
+          {category.map((id) => (
+            <S.SidebarItem key={id}>
+              <Link to={`/category/${id}`}>
+                <S.SidebarLink>
+                  <S.SidebarImg
+                    src={`img/playlist0${id}.png`}
+                    alt="day's playlist"
+                  />
+                </S.SidebarLink>
+              </Link>
+            </S.SidebarItem>
+          ))}
+          {/* <S.SidebarItem>
+            <Link to="/category">
+              <S.SidebarLink>
+                <S.SidebarImg src="img/playlist01.png" alt="day's playlist" />
+              </S.SidebarLink>
+            </Link>
           </S.SidebarItem>
           <S.SidebarItem>
-            <S.SidebarLink href="#">
-              <S.SidebarImg src="img/playlist02.png" alt="day's playlist" />
-            </S.SidebarLink>
+            <Link to="/category">
+              <S.SidebarLink>
+                <S.SidebarImg src="img/playlist02.png" alt="day's playlist" />
+              </S.SidebarLink>
+            </Link>
           </S.SidebarItem>
           <S.SidebarItem>
-            <S.SidebarLink href="#">
-              <S.SidebarImg src="img/playlist03.png" alt="day's playlist" />
-            </S.SidebarLink>
-          </S.SidebarItem>
+            <Link to="/category">
+              <S.SidebarLink>
+                <S.SidebarImg src="img/playlist03.png" alt="day's playlist" />
+              </S.SidebarLink>
+            </Link>
+          </S.SidebarItem> */}
         </S.SidebarList>
       </S.SidebarBlock>
     </S.MainSidebar>

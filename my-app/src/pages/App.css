@@ -42,7 +42,6 @@ body {
   height: 100%;
   font-family: "StratosSkyeng", sans-serif;
   color: #ffffff;
-  background-color: #181818;
 }
 
 .wrapper {
@@ -884,8 +883,4 @@ body {
 
 .App__text {
   color: red;
-}
-
-.notfound {
-  background-color: #181818;
 }
